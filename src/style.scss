@@ -1,0 +1,101 @@
+$headerBg: #2F3129;
+$headerCol:deeppink;
+$headerpad: 5px;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  
+  Track::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.coder .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $headerBg;
+    color: $headerCol;
+    padding: $headerpad;
+}
+.front{
+    display: flex;
+    width: 100% !important;
+    height: 100vh !important;
+}
+.front .allcode{
+    height: 100vh !important;
+}
+.front .allcode .coder{
+    height: calc(100vh/3) !important;
+    background: black;
+}
+.front .allcode .coder .header{
+    height: 6vh !important;
+    background: black !important;
+    font-size: 20px !important;
+}
+.front .allcode .coder .reactace{
+    height: calc(100vh/3 - 7vh) !important;
+    width: 40vw !important;
+}
+.front .run{
+    height: 6vh !important;
+    background: black;
+    color: blue;
+    font-size: 19px;
+    padding-left: 10px;
+}
+.front .iframe{
+    width: 59vw;
+    height: 94vh;
+    border: 5px solid black;
+}
+.home{
+    display: none;
+}
+@media screen and (max-width: 900px){
+    .front{
+        display: none !important;
+    }
+    .home{
+        display: block !important;
+    }
+    .Input{
+        padding: 5px;
+        background: black;
+    }
+    .reactace{
+        width: 100% !important;
+        height: 50vh !important;
+    }
+    .ace_print-margin{
+        display: none;
+    }
+
+    .run{
+        background: black;
+        padding-left: 20px;
+        color: blue;
+        font-size: 19px;
+    }
+    .iframe{
+        border: 5px solid black;
+        width: 100%;
+        height: 50vh;
+    }
+}
